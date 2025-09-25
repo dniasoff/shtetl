@@ -1,13 +1,13 @@
 # Project Brief: Shtetl
 
 ## Executive Summary
-Shtetl is an open-source community data hub that gives Jewish congregations a single place to publish and manage synagogue schedules, shiurim, and other communal services. It tackles fragmented communication by letting each synagogue control its own space while offering congregants unified access through mobile apps, MCP integrations, and automation hooks. The platform’s core promise is timely, actionable visibility into prayer times, learning opportunities, and alerts that keep the entire community connected.
+Shtetl is an open-source community data hub that gives Jewish kehilas (community) a single place to publish and manage zmanim, davening and shiurim times, seating plans, shaylos and shul content, and other communal services. It tackles fragmented communication by letting each synagogue control its own space while offering congregants unified access through mobile apps, MCP integrations, and automation hooks. The platform’s core promise is timely, actionable visibility into zmanim, davening and shiurim times, and alerts that keep the entire community connected.
 
 ## Problem Statement
-Local Jewish communities juggle dozens of unstructured channels—WhatsApp broadcasts, hallway announcements, laminated calendars, email threads—to keep track of minyan schedules, shiur rotations, and communal services. Because every synagogue (and often individual gabbaim) maintains its own version of “truth,” worshippers scramble to verify which nusach, location, or minyan actually has a quorum, while educators see shiurim overlooked simply because time or venue changes get lost in chat history. Administrators burn hours syncing spreadsheets, phone trees, and social posts, yet still face panicked calls minutes before Shacharit asking whether there’s a 6:20 or 6:30 start. Commercial calendar suites ignore zmanim logic, do not respect halachic constraints (e.g., Motzei Shabbat variations), and rarely expose APIs that community developers can extend. As expectations for automation grow—turning on HVAC 30 minutes before first minyan, triggering security lighting, or pushing location-aware alerts—the absence of a central, community-owned data backbone now creates operational risk, erodes trust in announcements, and leaves tech-savvy volunteers building one-off hacks that can’t scale.
+Local Jewish communities juggle dozens of unstructured channels—WhatsApp broadcasts, hallway announcements, sms, email threads—to keep track of minyan schedules, shiur rotations, and communal services. Because every synagogue (and often individual gabbaim) maintains its own version of “truth,” members struggle to keep track of the latest times as they usually come in a printed format that might be hanging somewhere but not accessible on the go when you need it. Times change from week to week or even daily making it difficult to remember, track or set reminders. Gaboim burn hours syncing spreadsheets, and calendars, emails and sms , yet still face panicked calls minutes before Shacharis asking whether there’s a 6:20 or 6:30 start. There is no easy wat expose APIs that community developers can extend. As expectations for automation grow — such as turning on air conditioning 30 minutes before first minyan, triggering security lighting, or pushing location-aware alerts.
 
 ## Proposed Solution
-Shtetl delivers a modular, open-source platform that lets each synagogue run its own managed space while contributing to a shared community-wide data backbone. Administrators get a synagogue-specific control panel to publish minyan schedules, shiurim, alerts, and automation rules built around authentic zmanim logic. Congregants access the same trusted source through mobile apps, opt-in subscriptions, and programmable channels (MCP servers, Zapier, smart facility triggers) that translate communal data into timely reminders or physical actions. Because the toolkit is community-owned, developers can extend integrations, crowdsource improvements, and ensure every update respects local minhagim. The result is a reliable, self-sustaining hub that keeps schedules in sync, empowers automation, and scales with the community’s needs.
+Shtetl delivers a modular, open-source platform that lets each synagogue run its own managed space while contributing to a shared community-wide data backbone. Administrators get a synagogue-specific control panel to publish minyan schedules, shiurim, alerts, simchas etc, and optionally zmanim. Congregants access the same trusted source through mobile apps, opt-in subscriptions for SMS and email, and programmable channels (MCP servers, Zapier, smart facility triggers) that translate communal data into timely reminders or physical actions. Because the toolkit is community-owned, developers can extend integrations, crowdsource improvements, and ensure every update respects local minhagim. The result is a reliable, self-sustaining hub that keeps schedules in sync, empowers automation, and scales with the community’s needs.
 
 ## Target Users
 ### Primary User Segment: Congregation Members
@@ -53,10 +53,9 @@ Shtetl MVP is successful when at least five synagogues actively maintain their s
 
 ## Post-MVP Vision
 ### Phase 2 Features
-- Congregational dashboards with analytics on attendance, alert engagement, and automation usage.
+- Congregational dashboards.
 - Community-wide event discovery with filtering by neighborhood, nusach, accessibility features.
 - Shared learning libraries that catalog shiur recordings and source sheets linked to schedules.
-- Facility resource scheduling for rooms and equipment with approval workflows.
 
 ### Long-term Vision
 Shtetl evolves into the default digital fabric for Jewish communal life—interconnecting synagogues, schools, and organizations through shared data standards, interoperable APIs, and community-built modules. It supports global deployment with localized minhagim, allows cross-community collaboration (e.g., visiting scholar circuits), and integrates with smart-city infrastructure for security and logistics.
@@ -102,7 +101,7 @@ Shtetl evolves into the default digital fabric for Jewish communal life—interc
 ### Key Risks
 - **Data Accuracy Drift:** Without disciplined admin workflows, stale or conflicting updates could erode trust and cause users to revert to old channels.
 - **Automation Misfires:** Incorrect automation rules (e.g., HVAC on at wrong time) could waste resources or create safety issues, prompting backlash.
-- **Adoption Resistance:** Some synagogues may resist centralization due to fear of losing control or misaligned digital readiness.
+- **Adoption Resistance:** Some synagogues may resist centralization due to fear of losing control or misaligned digital readiness. Also there is Internet dependance which some Shuls might object to. An optional SMS, or telephone interface can be built to mitigate this
 - **Volunteer Burnout:** Reliance on community contributors could stall integrations or maintenance if onboarding/support isn’t strong.
 
 ### Open Questions
@@ -112,7 +111,7 @@ Shtetl evolves into the default digital fabric for Jewish communal life—interc
 - How do we handle varied halachic interpretations (e.g., zmanim calculations) across communities?
 
 ### Areas Needing Further Research
-- Benchmarking successful communal scheduling systems (religious or secular) to identify best practices.
+- Benchmarking successful communal scheduling systems to identify best practices.
 - Evaluating automation hardware vendors used by synagogues for HVAC, lighting, security.
 - Understanding legal/privacy requirements for storing congregant contact data in different regions.
 - Assessing user appetite for cross-synagogue discovery features vs. synagogue-specific views.
